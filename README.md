@@ -21,12 +21,7 @@ This solver provides:
 *   Prints the solution path (sequence of puzzle states).
 *   Includes unit tests for all major functions.
 
-## Getting Started
 
-### Prerequisites
-
-*   Python 3.x
-*   No external libraries are strictly required beyond the Python standard library (heapq, unittest).
 
 ### Installation
 
@@ -40,9 +35,9 @@ This solver provides:
 
 ### Usage
 
-1.  **Prepare a puzzle file:**
+1.  **Input file:**
 
-    Create a text file (e.g., `n-puzzle.txt`) with the initial puzzle configuration. The file should contain the puzzle state, with numbers separated by tabs or spaces, and rows separated by newlines.  Use `0` to represent the blank tile.  For example:
+    I have a text file (e.g., `n-puzzle.txt`) with the initial puzzle configuration. The file contains the puzzle state, with numbers separated by tabs or spaces, and rows separated by newlines. `0`  represents the blank tile.  For example:
 
     ```
     1   2   3
@@ -50,10 +45,10 @@ This solver provides:
     7   5   8
     ```
 
-2.  **Run the solver:**
+2.  **Run main code:**
 
     ```bash
-    python3 n_puzzle_solver.py
+    python n_puzzle_solver.py
     ```
 
     The script will read the puzzle from `n-puzzle.txt` (or you can modify the script to read from a different file), solve it, and print the solution path to the console.
@@ -76,4 +71,4 @@ This solver provides:
 To run the unit tests, execute the following command:
 
 ```bash
-python3 -m unittest test_n_puzzle.py
+python -m unittest test_n_puzzle.py

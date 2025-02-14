@@ -34,7 +34,7 @@ This solver provides:
 
     ```bash
     git clone https://github.com/KananIsmayilov2002/csci_6511_project_1.git
-    cd n_puzzle_solver
+    cd csci_6511_project_1
     ```
 
 

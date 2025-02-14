@@ -33,17 +33,10 @@ This solver provides:
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/[your_github_username]/n-puzzle-solver.git
-    cd n-puzzle-solver
+    git clone https://github.com/KananIsmayilov2002/csci_6511_project_1.git
+    cd n_puzzle_solver
     ```
 
-2.  **(Optional) Create a virtual environment:**
-
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Linux/macOS
-    venv\Scripts\activate.bat # On Windows
-    ```
 
 ### Usage
 

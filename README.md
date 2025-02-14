@@ -76,4 +76,4 @@ This solver provides:
 To run the unit tests, execute the following command:
 
 ```bash
-python3 -m unittest test_n_puzzle_solver.py
+python3 -m unittest test_n_puzzle.py

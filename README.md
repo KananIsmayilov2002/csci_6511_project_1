@@ -1,0 +1,103 @@
+# N-Puzzle Solver
+
+## Overview
+
+This repository contains a Python implementation of an N-Puzzle solver using the A* search algorithm. The N-Puzzle is a classic problem in artificial intelligence, consisting of a square grid with numbered tiles and a blank space. The goal is to rearrange the tiles from a given initial configuration to a desired target configuration by sliding tiles into the blank space.
+
+This solver provides:
+
+*   **A\* Search Implementation:**  An efficient search algorithm to find the optimal solution.
+*   **Manhattan Distance Heuristic:**  A common and effective heuristic for estimating the distance to the goal state.
+*   **Puzzle Generation:**  Functions to generate both initial and target puzzle states.
+*   **Solvability Check:** Implicitly handles solvability by not finding a solution if the puzzle is unsolvable.
+*   **Unit Tests:**  Comprehensive unit tests to ensure code correctness and robustness.
+
+## Features
+
+*   Reads puzzle configuration from a text file.
+*   Calculates the Manhattan distance heuristic.
+*   Generates valid neighbor puzzle states.
+*   Solves the puzzle using A* search.
+*   Prints the solution path (sequence of puzzle states).
+*   Includes unit tests for all major functions.
+
+## Getting Started
+
+### Prerequisites
+
+*   Python 3.x
+*   No external libraries are strictly required beyond the Python standard library (heapq, unittest).
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/[your_github_username]/n-puzzle-solver.git
+    cd n-puzzle-solver
+    ```
+
+2.  **(Optional) Create a virtual environment:**
+
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Linux/macOS
+    venv\Scripts\activate.bat # On Windows
+    ```
+
+### Usage
+
+1.  **Prepare a puzzle file:**
+
+    Create a text file (e.g., `n-puzzle.txt`) with the initial puzzle configuration. The file should contain the puzzle state, with numbers separated by tabs or spaces, and rows separated by newlines.  Use `0` to represent the blank tile.  For example:
+
+    ```
+    1   2   3
+    4   0   6
+    7   5   8
+    ```
+
+2.  **Run the solver:**
+
+    ```bash
+    python3 n_puzzle_solver.py
+    ```
+
+    The script will read the puzzle from `n-puzzle.txt` (or you can modify the script to read from a different file), solve it, and print the solution path to the console.
+
+    ### Example Output
+
+    Solution found:
+Initial Puzzle:
+1 2 3
+4 0 6
+7 5 8
+
+Step: 1
+1 2 3
+4 5 6
+7 0 8
+
+Step: 2
+1 2 3
+4 5 6
+7 8 0
+
+## Code Structure
+
+    *   `n_puzzle_solver.py`: Contains the main logic for the N-Puzzle solver, including:
+    *   `read_puzzle()`: Reads the puzzle configuration from a file.
+    *   `find_blank()`: Finds the coordinates of the blank space.
+    *   `calculate_manhattan_distance()`: Calculates the Manhattan distance heuristic.
+    *   `generate_target_puzzle()`: Generates the target puzzle configuration.
+    *   `get_neighbors()`: Generates possible neighbor puzzle states.
+    *   `solve_n_puzzle()`: Solves the puzzle using A* search.
+    *   `print_puzzle()`: Prints the puzzle configuration.
+    *   `test_n_puzzle_solver.py`: Contains the unit tests for the functions in `n_puzzle_solver.py`.
+
+## Testing
+
+To run the unit tests, execute the following command:
+
+```bash
+python3 -m unittest test_n_puzzle_solver.py

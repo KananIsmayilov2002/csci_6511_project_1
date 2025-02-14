@@ -61,7 +61,7 @@ This solver provides:
 
 ## Code Structure
 
-    *   `n_puzzle_solver.py`: Contains the main logic for the N-Puzzle solver, including:
+*   `n_puzzle_solver.py`: Contains the main logic for the N-Puzzle solver, including:
     *   `read_puzzle()`: Reads the puzzle configuration from a file.
     *   `find_blank()`: Finds the coordinates of the blank space.
     *   `calculate_manhattan_distance()`: Calculates the Manhattan distance heuristic.
@@ -69,7 +69,7 @@ This solver provides:
     *   `get_neighbors()`: Generates possible neighbor puzzle states.
     *   `solve_n_puzzle()`: Solves the puzzle using A* search.
     *   `print_puzzle()`: Prints the puzzle configuration.
-    *   `test_n_puzzle_solver.py`: Contains the unit tests for the functions in `n_puzzle_solver.py`.
+*   `test_n_puzzle_solver.py`: Contains the unit tests for the functions in `n_puzzle_solver.py`.
 
 ## Testing
 

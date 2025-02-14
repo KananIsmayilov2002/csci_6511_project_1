@@ -58,23 +58,6 @@ This solver provides:
 
     The script will read the puzzle from `n-puzzle.txt` (or you can modify the script to read from a different file), solve it, and print the solution path to the console.
 
-    ### Example Output
-
-    Solution found:
-Initial Puzzle:
-1 2 3
-4 0 6
-7 5 8
-
-Step: 1
-1 2 3
-4 5 6
-7 0 8
-
-Step: 2
-1 2 3
-4 5 6
-7 8 0
 
 ## Code Structure
 

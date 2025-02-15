@@ -6,12 +6,14 @@ class TestNPuzzle(unittest.TestCase):
     def test_read_puzzle(self):
         
         with open("test_puzzle.txt", "w") as f:
-            f.write("1\t2\t3\n")
-            f.write("4\t0\t6\n")
-            f.write("7\t5\t8\n")
+            f.write("1\t2\t3\t4\t5\n")
+            f.write("12\t6\t7\t9\t10\n")
+            f.write("13\t17\t8\t23\t14\n")
+            f.write("11\t18\t22\t15\t0\n")
+            f.write("16\t21\t24\t19\t20\n")
         
         puzzle = n_puzzle_solver.read_puzzle()
-        self.assertEqual(puzzle, [[1, 2, 3], [4, 0, 6], [7, 5, 8]])
+        self.assertEqual(puzzle, [[1, 2, 3, 4 ,5], [12, 6, 7, 9, 10], [13, 17, 8, 23, 14],[11, 18, 22, 15, 0],[16, 21, 24, 19, 20]])
 
     def test_find_blank(self):
         puzzle = [[1, 2, 3], [4, 0, 6], [7, 5, 8]]
